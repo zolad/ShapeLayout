@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <com.zolad.shapelayout.ShapeLayout
+        android:id="@+id/spl_v1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        app:layout_constraintDimensionRatio="128:72"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.zolad.shapelayout.sample.VideoTextureView
+
+
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            />
+
+    </com.zolad.shapelayout.ShapeLayout>
+
+
+    <com.zolad.shapelayout.ShapeLayout
+        android:id="@+id/spl_v2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        app:layout_constraintDimensionRatio="128:72"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spl_v1">
+
+        <com.zolad.shapelayout.sample.VideoTextureView
+
+            android:id="@+id/video_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            />
+
+    </com.zolad.shapelayout.ShapeLayout>
+
+</android.support.constraint.ConstraintLayout>
